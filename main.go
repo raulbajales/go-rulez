@@ -11,7 +11,7 @@ type Rule interface {
 
 type Engine interface {
 	AddListener(l Listener)
-	AddRule(Rule)
+	AddRule(r Rule)
 	Run(in ctx.In) (ctx.Out, error)
 }
 
